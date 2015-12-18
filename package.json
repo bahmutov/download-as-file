@@ -1,0 +1,55 @@
+{
+  "name": "download-as-file",
+  "version": "1.0.0",
+  "description": "Forms data URI from the given text, then creates and clicks a link to download data as file",
+  "main": "src/download-as-file.js",
+  "scripts": {
+    "test": "node --harmony node_modules/.bin/rocha src/*-spec.js",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
+    "lint": "standard src/*.js",
+    "commit": "commit-wizard"
+  },
+  "files": [
+    "src/*.js",
+    "!src/*-spec.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/download-as-file.git"
+  },
+  "keywords": [
+    "download",
+    "text",
+    "browser",
+    "utility"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/download-as-file/issues"
+  },
+  "homepage": "https://github.com/bahmutov/download-as-file#readme",
+  "config": {
+    "pre-git": {
+      "commit-msg": ["simple"],
+      "pre-commit": [
+        "npm run lint",
+        "npm run test"
+      ],
+      "pre-push": [
+        "npm run size"
+      ],
+      "post-commit": [],
+      "post-merge": []
+    }
+  },
+  "devDependencies": {
+    "pre-git": "3.1.1",
+    "rocha": "1.6.1",
+    "standard": "5.4.1"
+  },
+  "dependencies": {
+    "check-more-types": "2.10.0",
+    "lazy-ass": "1.3.0"
+  }
+}
