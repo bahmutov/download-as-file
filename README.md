@@ -8,6 +8,8 @@
 [![manpm](https://img.shields.io/badge/manpm-%E2%9C%93-3399ff.svg)](https://github.com/bahmutov/manpm)
 [![standard style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
+[Demo](http://glebbahmutov.com/download-as-file/)
+
 ## Install
 
     npm install --save download-as-file
