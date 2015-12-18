@@ -3,7 +3,7 @@
 
 [![NPM][download-as-file-icon] ][download-as-file-url]
 
-[![Build status][download-as-file-c-image] ][download-as-file-ci-url]
+[![Build status][download-as-file-ci-image] ][download-as-file-ci-url]
 [![semantic-release][semantic-image] ][semantic-url]
 [![manpm](https://img.shields.io/badge/manpm-%E2%9C%93-3399ff.svg)](https://github.com/bahmutov/manpm)
 [![standard style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
