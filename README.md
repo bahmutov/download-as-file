@@ -12,6 +12,18 @@
 
     npm install --save download-as-file
 
+Either load via `require('download-as-file')` or by including `dist/download-as-file.js` 
+from the browser
+
+## Use
+
+```js
+downloadAsFile({
+    data: 'this is some text',
+    filename: 'demo.txt'
+})
+```
+
 ## Small print
 
 Author: Gleb Bahmutov &copy; 2015
