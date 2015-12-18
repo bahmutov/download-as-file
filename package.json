@@ -8,9 +8,11 @@
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "lint": "standard src/*.js",
     "commit": "commit-wizard",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "build": "webpack --verbose"
   },
   "files": [
+    "dist",
     "src/*.js",
     "!src/*-spec.js"
   ],
@@ -37,7 +39,8 @@
       ],
       "pre-commit": [
         "npm run lint",
-        "npm run test"
+        "npm run test",
+        "npm run build"
       ],
       "pre-push": [
         "npm run size"
@@ -49,8 +52,9 @@
   "devDependencies": {
     "pre-git": "3.1.1",
     "rocha": "1.6.1",
+    "semantic-release": "^4.3.5",
     "standard": "5.4.1",
-    "semantic-release": "^4.3.5"
+    "webpack": "1.12.9"
   },
   "dependencies": {
     "check-more-types": "2.10.0",
