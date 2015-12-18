@@ -2,6 +2,7 @@
   "name": "download-as-file",
   "description": "Forms data URI from the given text, then creates and clicks a link to download data as file",
   "main": "src/download-as-file.js",
+  "version": "0.0.0-semantic-release",
   "scripts": {
     "test": "node --harmony node_modules/.bin/rocha src/*-spec.js",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
