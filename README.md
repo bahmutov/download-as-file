@@ -19,10 +19,14 @@ from the browser
 
 ## Use
 
+If you want to download text when the user clicks button with id 'btn'
+
 ```js
-downloadAsFile({
-    data: 'this is some text',
-    filename: 'demo.txt'
+document.getElementById('btn').addEventListener('click', function () {
+    downloadAsFile({
+        data: 'this is some text',
+        filename: 'demo.txt'
+    })
 })
 ```
 
