@@ -25,7 +25,8 @@ If you want to download text when the user clicks button with id 'btn'
 document.getElementById('btn').addEventListener('click', function () {
     downloadAsFile({
         data: 'this is some text',
-        filename: 'demo.txt'
+        filename: 'demo.txt',
+        element: document.body // parent element, default: document.body
     })
 })
 ```
