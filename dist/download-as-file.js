@@ -71,7 +71,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var a = document.createElement('a')
 	  a.download = opts.filename || 'data.txt'
 	  a.href = uri
-	  document.body.appendChild(a)
+	  var element = opts.element || document.body
+	  element.appendChild(a)
 	  a.click()
 	  if (is.fn(a.remove)) {
 	    a.remove()
